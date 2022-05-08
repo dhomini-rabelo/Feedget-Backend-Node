@@ -20,3 +20,16 @@ routes.post('/feedbacks', async (req, res) => {
 
     return res.status(201).send()// CREATED
 })
+
+
+routes.get('', (req, res) => {
+    return res.send({
+        'aboutProject': 'https://github.com/dhomini-rabelo/Feedget-Backend-Node',
+        'routesGET': [
+            '/',
+        ],
+        'routesPOST': [
+            '/feedbacks',
+        ],
+    })
+})
