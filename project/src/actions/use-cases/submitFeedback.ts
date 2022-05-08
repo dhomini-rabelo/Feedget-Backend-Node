@@ -19,7 +19,7 @@ export class SubmitFeedbackUseCase {
                 '<h1>Dados do novo feedback</h1>',
                 `<p>Tipo: ${body.type}</p>`,
                 `<p>Comentário: ${body.comment}</p>`,
-                `<p>Screenshot: ${body.screenshot}</p>`,
+                body.screenshot ? `<img src="${body.screenshot}" >` : '',
                 '</div>',
             ].join('\n')
         })
