@@ -9,8 +9,8 @@ export const routes = express.Router()
 
 
 routes.post('/feedbacks', async (req, res) => {
-    const process = validateFeedback(req.body)
-    if (!process.isValid) return res.status(400).send(process.errors) // 400 - BAD REQUEST
+    const validation = validateFeedback(req.body)
+    if (!validation.isValid) return res.status(400).send(validation.errors) // 400 - BAD REQUEST
 
     const feedbackModel = new PrismaFeedbackModel()
     const mailProvider = new NodemailerMailProvider()
