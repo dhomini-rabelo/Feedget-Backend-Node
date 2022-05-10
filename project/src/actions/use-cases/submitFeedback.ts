@@ -1,5 +1,5 @@
 import { FeedbackModelContractType } from "../contracts/models";
-import { FeedbackModelDataType } from "../../models";
+import { FeedbackModelDataType } from "../../types/models";
 import { MailInterface } from "../../interfaces/mail/interface";
 
 

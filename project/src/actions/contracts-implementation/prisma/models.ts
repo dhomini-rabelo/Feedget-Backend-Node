@@ -1,4 +1,4 @@
-import { FeedbackModelDataType } from "../../../models";
+import { FeedbackModelDataType } from "../../../types/models";
 import { FeedbackModelContractType } from "../../contracts/models";
 import { prisma } from "../../../prisma";
 
@@ -13,4 +13,11 @@ export class PrismaFeedbackModel implements FeedbackModelContractType {
             }
         })
     }
+
+    objects = async () => {
+        const feedbacksData = await prisma.feedback.findMany()
+        const feedbacksAsList =  feedbacksData.slice()
+        return feedbacksAsList as FeedbackModelDataType[]
+    }  
+
 }
