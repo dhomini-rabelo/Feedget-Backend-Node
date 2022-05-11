@@ -24,8 +24,18 @@
 
 <br>
 <ul>
+
+<br>
 <li>/ [ GET ]</li>
-<li>/feedbacks [ POST ]</li>
+<br>
+<p>GET: Retorna um json com informações do projeto</p>
+
+<br>
+<br>
+<li>/feedbacks [ GET | POST ]</li>
+<br>
+<p>GET: Retorna todos os feedbacks</p>
+<p>POST: Cria um novo feedback e retorna um status 201 - CREATED</p>
 </ul>
 
 <br>
