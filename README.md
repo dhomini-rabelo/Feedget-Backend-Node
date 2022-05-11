@@ -5,7 +5,7 @@
 <a href="#study">Aprendizado</a> • 
 <a href="#tests">Testes</a>
 </p>
-<p>Projeto da nlw ( evento da Rocketseat ), o frontend foi feito react, que consome uma api do backend em node. Este projeto está hospeadado na Railway, acesse em <a href="https://feedget-backend-node-production.up.railway.app/">https://feedget-backend-node-production.up.railway.app/</a>.</p>
+<p>Projeto da nlw ( evento da Rocketseat ), o frontend foi feito react, que consome uma api do backend em node. Esta aplicação consiste num widget que envia para os devs um feedback do usuário que poder ser um bug, uma ideia ou qualquer outra coisa. Este projeto está hospeadado na Railway, acesse em <a href="https://feedget-backend-node-production.up.railway.app/">https://feedget-backend-node-production.up.railway.app/</a>.</p>
 
 <br>
 <h2 id="tools">🛠️ Ferramentas</h2>
