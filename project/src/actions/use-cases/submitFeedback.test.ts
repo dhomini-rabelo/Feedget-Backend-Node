@@ -3,11 +3,12 @@ import { requiredErrorMessage } from "../../modules/validation/messages"
 import { SubmitFeedbackUseCase } from "./submitFeedback"
 
 const createFeedbackSpy = jest.fn()
+const getFeedbacksSpy = jest.fn()
 const sendMailSpy = jest.fn()
 
 
 const action = new SubmitFeedbackUseCase(
-    { create: createFeedbackSpy },
+    { create: createFeedbackSpy, objects: getFeedbacksSpy },
     { send: sendMailSpy }
 )
 
